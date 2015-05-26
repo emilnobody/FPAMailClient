@@ -27,10 +27,12 @@
                   <Button fx:id="replay" layoutY="5.0" mnemonicParsing="false" text="Replay" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0" />
                   <Button fx:id="replayall" layoutX="80.0" layoutY="4.0" mnemonicParsing="false" text="Replay all" />
                   <Button fx:id="forward" layoutX="180.0" layoutY="4.0" mnemonicParsing="false" text="Forward" />
-                  <Label fx:id="to" layoutX="1.0" layoutY="42.0" text="to:  s1234@beuth-hoschule.de; s98765@beuth-hochschule.de" />
-                  <Label fx:id="from" layoutX="1.0" layoutY="71.0" text="From:  s55577788899@beuth-hoschule.de" />
-                  <Label fx:id="message" layoutX="1.0" layoutY="97.0" text="Eine Testnachricht von s55577788899@beuth-hoschule.de" />
+                  <Label layoutX="9.0" layoutY="42.0" text="To:" />
+                  <Label fx:id="to" layoutX="50.0" layoutY="42.0" text="s1234@beuth-hoschule.de; s98765@beuth-hochschule.de" />
+                  <Label fx:id="from" layoutX="50.0" layoutY="71.0" text=" s55577788899@beuth-hoschule.de" />
+                  <Label fx:id="messageContent" layoutX="50.0" layoutY="97.0" text="Eine Testnachricht von s55577788899@beuth-hoschule.de" />
                   <Label fx:id="date" layoutX="577.0" layoutY="42.0" text="23.04.2014" />
+                  <Label layoutX="7.0" layoutY="71.0" text="From:" />
                </children>
                <padding>
                   <Insets right="10.0" />

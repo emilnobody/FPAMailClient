@@ -15,7 +15,11 @@ import javafx.scene.control.TreeView;
 import javafx.scene.control.TreeItem;
 import javafx.scene.image.Image;
 
-
+/*
+*eine Klasse die EIne Treeview initializiert 
+* die TreeView wird mit TreeItems gefüllt
+* Autor: Emil Steinkopf
+*/
 
 public class TreeViewControler implements Initializable {
 
@@ -32,13 +36,14 @@ public class TreeViewControler implements Initializable {
 
     public void setTreeItem() {
         // Node folderIcon = new ImageView(new Image(getClass().getResourceAsStream("/images/foulder.png")));
-        TreeItem<String> root = new TreeItem<String>("folder");
         Node folderIcon = new ImageView(new Image(getClass().getResourceAsStream("../images/folder.png")));
         Node folderIcon2 = new ImageView(new Image(getClass().getResourceAsStream("../images/folder.png")));
         Node folderIcon3 = new ImageView(new Image(getClass().getResourceAsStream("../images/folder.png")));
-        
+         Node folderIcon4 = new ImageView(new Image(getClass().getResourceAsStream("../images/folder.png")));
+        TreeItem<String> root = new TreeItem<String>("folder",folderIcon4);
 
         root.setExpanded(true);
+       
         root.getChildren().addAll(new TreeItem<>("Subfolder1", folderIcon), new TreeItem<>("Subfolder2", folderIcon2), new TreeItem<>("Subfolder", folderIcon3));
         tree.setRoot(root);
     }

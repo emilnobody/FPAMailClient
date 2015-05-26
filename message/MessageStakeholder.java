@@ -2,10 +2,13 @@ package message;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Created by Benjamin Haupt on 03.04.15.
  */
+@XmlRootElement
 public class MessageStakeholder {
 
     private StringProperty name;
@@ -31,6 +34,7 @@ public class MessageStakeholder {
         return name;
     }
 
+ 
     public void setName(String name) {
         this.name.set(name);
     }
